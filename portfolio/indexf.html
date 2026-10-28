@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eshika Srivastava | Frontend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f0fa;--surface:#fff;--ink:#1d1a3b;--muted:#5d5a7a;--line:#dcd8ee;--accent:#0e7c86;--accent-ink:#fff;--warm:#f0a92e;
+--hf:'Bricolage Grotesque','Trebuchet MS',sans-serif;--bf:'DM Sans',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:#15132b;--surface:#201d3f;--ink:#efedfb;--muted:#a9a5cc;--line:#34305c;--accent:#4fd1c5;--accent-ink:#10202a;--warm:#f5b94a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.65 var(--bf)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--warm);outline-offset:3px;border-radius:6px}
+.layout{display:grid;grid-template-columns:320px 1fr;max-width:1180px;margin:0 auto;gap:48px;padding:40px 24px}
+aside{position:sticky;top:40px;align-self:start;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:32px 26px}
+.avatar{width:120px;height:120px;border-radius:36px 36px 36px 8px;object-fit:cover;display:block;border:3px solid var(--accent);margin-bottom:20px}
+aside h1{font:800 1.9rem/1.1 var(--hf);margin:0 0 6px}
+.role{color:var(--muted);margin:0 0 22px}
+.contact{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:12px;font-size:.95rem}
+.contact span{display:block;color:var(--muted);font-size:.82rem}
+.contact a{text-decoration:none;word-break:break-all}
+.contact a:hover{text-decoration:underline}
+nav{display:flex;flex-wrap:wrap;gap:8px}
+nav a{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.9rem}
+nav a:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+main{min-width:0}
+section{padding:8px 0 56px}
+h2{font:800 clamp(1.7rem,4vw,2.3rem)/1.1 var(--hf);margin:0 0 20px}
+.hero h2{font-size:clamp(2.3rem,6vw,4rem);line-height:1.02;letter-spacing:-.02em;max-width:14ch}
+.hero p{max-width:56ch;color:var(--muted)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;text-decoration:none;padding:12px 22px;border-radius:14px;font-weight:500;background:var(--accent);color:var(--accent-ink)}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.skills{display:grid;gap:14px}
+.skill{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 20px}
+.skill div{display:flex;justify-content:space-between;font-weight:500;margin-bottom:10px}
+.bar{height:8px;background:var(--line);border-radius:8px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--warm));border-radius:8px;transition:width 1.1s ease}
+.timeline{border-left:3px solid var(--accent);padding-left:24px}
+.timeline .when{font:700 .95rem var(--hf);color:var(--accent)}
+.timeline h3{margin:2px 0 4px;font:700 1.3rem var(--hf)}
+.timeline p{margin:0;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font:700 1.2rem var(--hf)}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.tags span{background:var(--bg);border-radius:8px;padding:2px 10px;font-size:.8rem}
+footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:20px}
+@media (max-width:860px){.layout{grid-template-columns:1fr;gap:28px;padding:20px 16px}aside{position:static}}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+  <img class="avatar" src="C:\Users\kriti\OneDrive\Desktop\eshika.jpg" alt="Portrait of Eshika Srivastava">
+  <h1>Eshika Srivastava</h1>
+  <p class="role">Frontend Developer · B.Tech student</p>
+  <ul class="contact">
+    <li><span>Email</span><a href="mailto:srivastavaeshika9@gmail.com">srivastavaeshika9@gmail.com</a></li>
+    <li><span>Phone</span><a href="tel:+917567893457">+91 75678 93457</a></li>
+    <li><span>Location</span>Greater Noida, Uttar Pradesh</li>
+    <li><span>GitHub</span><a href="https://github.com/eshikaaa9" target="_blank" rel="noopener">github.com/eshikaaa9</a></li>
+  </ul>
+  <nav aria-label="Sections">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+</aside>
+
+<main>
+  <section id="about" class="hero">
+    <h2>I build clear, quick web pages.</h2>
+    <p>Hi, I’m Eshika, a B.Tech student at GL Bajaj Group of Institutions. I work with HTML, CSS and JavaScript to turn ideas into responsive, easy-to-use websites, and I’m always picking up new tools to solve real problems.</p>
+    <div class="btns"><a class="btn" href="#contact">Get in touch</a><a class="btn alt" href="https://github.com/eshikaaa9" target="_blank" rel="noopener">View GitHub</a></div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill"><div><span>HTML</span><span>Structure</span></div><div class="bar"><i data-w="85"></i></div></div>
+      <div class="skill"><div><span>CSS</span><span>Layout &amp; styling</span></div><div class="bar"><i data-w="80"></i></div></div>
+      <div class="skill"><div><span>JavaScript</span><span>Interactivity</span></div><div class="bar"><i data-w="70"></i></div></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="when">Currently pursuing</div>
+      <h3>Bachelor of Technology</h3>
+      <p>GL Bajaj Group of Institutions, Greater Noida</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="card"><h3>Bookstore</h3><p>A multi-page online bookstore with a home page, book catalogue, cart, login and registration pages.</p><div class="tags"><span>HTML</span><span>CSS</span></div><div class="btns" style="margin-top:6px"><a class="btn" href="https://bookstore-html-beta.vercel.app" target="_blank" rel="noopener">Live demo</a><a class="btn alt" href="https://github.com/eshikaaa9/Bookstore
